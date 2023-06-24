@@ -36,6 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(backgroundColor: Color.fromARGB(255, 32, 3, 48), automaticallyImplyLeading: false,),
       body: Container(
         child: Stack(
           children: <Widget>[
@@ -68,7 +69,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       //   ],
                       // ),
                       const Spacer(),
-                      GestureDetector(child: Image.asset("assets/notify.png", height: 22,),onTap: (){Navigator.of(context).pushReplacement(
+                     
+                      GestureDetector(child: Image.asset("assets/notify.png", height: 22,),onTap
+                      : (){Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (context) => LoginPage(),
         ),

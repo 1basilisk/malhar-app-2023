@@ -112,48 +112,12 @@ class _ContactState extends State<Contact> {
                 ),
                 
                 //mail
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-
-                  children: [
-                    SizedBox(width: 320),
-
-                    const Icon(Icons.mail_outline_rounded,
-                    size: 16,
-                    color:  Color.fromARGB(255, 255, 255, 255),),
-
-                    Text("quartet@malharfest.in",
-                      style: GoogleFonts.poppins(
-                        fontSize: 16.0,
-                        fontWeight : FontWeight.w300,
-                        fontStyle: FontStyle.italic,
-                        color: const Color.fromARGB(255, 255, 255, 255),
-                      ),
-                ),
-                  ],
-                ),
+                
               const SizedBox(
                   height:6,
                 ),
                 //mail                
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    SizedBox(width: 320),
-                    const Icon(Icons.mail_outline_rounded,
-                    size: 16,
-                    color:  Color.fromARGB(255, 255, 255, 255),),
-
-                    Text(" malharfest@xaviers.edu.in",
-                      style: GoogleFonts.poppins(
-                        fontSize: 16.0,
-                        fontWeight : FontWeight.w300,
-                        fontStyle: FontStyle.italic,
-                        color: const Color.fromARGB(255, 255, 255, 255),
-                      ),
-                ),
-                  ],
-                ),
+                
                 
                 const SizedBox(
                   height:25,

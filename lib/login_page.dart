@@ -4,8 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:malhar_2023/event_module/home_page.dart';
 import 'package:malhar_2023/home.dart';
-
 import 'package:malhar_2023/pages/utils/fire_auth.dart';
 import 'package:malhar_2023/pages/utils/validator.dart';
 
@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
      
         Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => HomeScreen(),
+          builder: (context) => PopUp(user: user.uid,),
         ),
       );
     
@@ -64,6 +64,22 @@ class _LoginPageState extends State<LoginPage> {
         _focusPassword.unfocus();
       },
       child: Scaffold(
+        appBar:  AppBar(
+        title: Text(
+          "",
+          style: GoogleFonts.openSans(
+              textStyle: TextStyle(
+                  color: Color.fromARGB(179, 4, 3, 3),
+                  fontSize: 25,
+                  fontWeight: FontWeight.w600)),
+        ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.push(context,
+              MaterialPageRoute(builder: (context) => HomeScreen())),
+        ),
+        backgroundColor: Colors.white,
+      ),
         body: FutureBuilder(
           future: _initializeFirebase(),
           builder: (context, snapshot) {
@@ -159,7 +175,7 @@ class _LoginPageState extends State<LoginPage> {
                                               
         Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => HomeScreen(),
+          builder: (context) => PopUp(user: user.uid,),
         ),
       );
       }
