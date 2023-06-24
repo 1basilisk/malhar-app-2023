@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "455163449554",
+    "project_id": "malhar-2023",
+    "storage_bucket": "malhar-2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455163449554:android:940203d14dc92231af1d0b",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455163449554-6i1fhlnjn4esdtkbdb3a1h637vhecm7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWWXxhpPp907y2qdiRaTpIQ-mxmWlKL6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455163449554-6i1fhlnjn4esdtkbdb3a1h637vhecm7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
